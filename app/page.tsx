@@ -8,7 +8,7 @@ import AddBook from '@/components/AddBook'
 import ListBook from '@/components/ListBook'
 import { BooksReducer } from '@/lib/reducer'
 import { sampledata } from '@/lib/sampleData'
-function page() {
+function Page() {
   const [books, dispatch] = useReducer(BooksReducer, sampledata)
   return (
     <div>
@@ -21,4 +21,4 @@ function page() {
   )
 }
 
-export default page
+export default Page
