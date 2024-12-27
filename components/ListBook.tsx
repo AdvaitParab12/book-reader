@@ -1,8 +1,20 @@
 import React from 'react'
+import SingleBook from './SingleBook'
 
-function ListBook() {
+interface ListBookProps{
+  books:Book[]
+  dispatch:React.Dispatch<Action>
+}
+
+function ListBook({books,dispatch}:ListBookProps) {
   return (
-    <div>ListBook</div>
+    <div className='flex gap-2 container mx-auto flex-wrap items-center justify-center'>
+      {
+        books.map((book)=>[
+          <SingleBook key={book.id} book={book} dispatch={dispatch} />
+        ])
+      }
+    </div>
   )
 }
 
