@@ -8,7 +8,7 @@ interface ListBookProps{
 
 function ListBook({books,dispatch}:ListBookProps) {
   return (
-    <div className='flex gap-2 container mx-auto flex-wrap items-center justify-center'>
+    <div className='flex gap-2 container mx-auto flex-wrap items-center justify-center mt-10'>
       {
         books.map((book)=>[
           <SingleBook key={book.id} book={book} dispatch={dispatch} />

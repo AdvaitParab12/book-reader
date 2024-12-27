@@ -5,7 +5,7 @@ import {ModeToggle} from "@/components/ToggleMode"
 
 function Header() {
   return (
-    <div className='flex justify-between  px-4 py-2 border-b border-foreground items-center mb-10'>
+    <div className='flex justify-between  px-4 py-2 border-b border-foreground items-center'>
         <CrownIcon />
         <ModeToggle />
     </div>

@@ -1,16 +1,18 @@
 "use client"
 import React from 'react'
 import { useReducer } from 'react'
+import { LampDemo } from '@/components/ui/lamps'
+
 
 import AddBook from '@/components/AddBook'
 import ListBook from '@/components/ListBook'
-import { booksReducer } from '@/lib/reducer'
+import { BooksReducer } from '@/lib/reducer'
 import { sampledata } from '@/lib/sampleData'
 function page() {
-  const [books, dispatch] = useReducer(booksReducer, sampledata)
+  const [books, dispatch] = useReducer(BooksReducer, sampledata)
   return (
     <div>
-
+      <LampDemo />
       <AddBook dispatch={dispatch} />
       <ListBook books={books} dispatch={
         dispatch

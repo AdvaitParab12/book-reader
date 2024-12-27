@@ -1,4 +1,4 @@
-export const booksReducer = (state:Book[],action:Action):Book[]=>{
+export const BooksReducer = (state:Book[],action:Action):Book[]=>{
     switch(action.type){
         case 'add':
             const book ={
